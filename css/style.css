@@ -1,23 +1,50 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "DroidSerif", sans-serif;
-  font-weight: 400;
-}
-
+*,
 ::before,
 ::after {
   box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --font-family: "Geometria", cursive;
+}
+
+body,
+button {
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "DroidSerif";
-  src: url("https://rawgit.com/google/fonts/master/ufl/ubuntumono/UbuntuMono-Italic.ttf")
-    format("truetype");
-  font-weight: bold;
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Bold.woff");
+  font-display: swap;
+  font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-BoldItalic.woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria.woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Italic.woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
 }
 
 img {
@@ -49,8 +76,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -88,10 +116,53 @@ header {
   top: calc(var(--vertical-offset) + 12px);
 }
 
-.hero {
+.hero-section {
   background-image: url("../img/hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 117px;
+  min-height: 600px;
+  /* transform: scale(-1, 1); */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hero-descr {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.link {
+  display: inline-flex;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: brown;
+  border: 1px solid currentColor;
+  border-radius: 6%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 160px;
+  transition: 0.2s background-color ease-in-out;
+}
+
+.link svg {
+  fill: currentColor;
+  max-width: 15px;
+  max-height: 15px;
+  transform: translateY(1px);
+}
+
+.link:hover {
+  background-color: floralwhite;
 }
