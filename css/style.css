@@ -1,211 +1,44 @@
-*,
-::before,
-::after {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
-
-:root {
-  --font-family: "Geometria", cursive;
+.header,
+.main,
+.footer {
+  display: flex;
+  justify-content: space-around;
 }
-
-body,
-button {
-  font-family: var(--font-family);
-  font-weight: 400;
+.header .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
 }
-
-@font-face {
-  font-family: "Geometria";
-  src: url("../fonts/Geometria-Bold.woff");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geometria";
-  src: url("../fonts/Geometria-BoldItalic.woff");
-  font-display: swap;
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Geometria";
-  src: url("../fonts/Geometria.woff");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geometria";
-  src: url("../fonts/Geometria-Italic.woff");
-  font-display: swap;
-  font-weight: 400;
-  font-style: italic;
-}
-
-img {
-  max-width: 100%;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.button-reset {
-  padding: 0;
-  margin: 0;
-  border: none;
-  border-color: transparent;
-  cursor: pointer;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.header-container {
+.logo {
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 25px 0;
 }
-
-.burger {
-  --vertical-offset: 14px;
-  --horizontal-offset: 11px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-  padding: var(--horizontal-offset) var(--vertical-offset);
+.logo span {
+  font-size: 20px;
+  color: black;
 }
-
-.burger-line {
-  position: absolute;
-  left: 50%;
-  top: var(--vertical-offset);
+.menu li {
   display: inline-block;
-  background-color: black;
-  height: 2px;
-  width: calc(100% - var(--vertical-offset) * 2);
-  transform: translateX(-50%);
+  padding: 20px;
+  margin: 0 5px;
+  font-size: 20px;
+  border: 2px solid bisque;
+  transition: all 0.7s ease;
 }
-
-.burger-line:nth-child(2) {
-  top: calc(var(--vertical-offset) + 6px);
+.menu li:hover {
+  background-color: pink;
+  border: 2px solid black;
 }
-
-.burger-line:nth-child(3) {
-  top: calc(var(--vertical-offset) + 12px);
-}
-
-.hero-section {
-  background-image: url("../img/hero-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 117px;
-  min-height: 657px;
-  /* transform: scale(-1, 1); */
-}
-
-.hero-content {
-  max-width: 600px;
-}
-
-.hero-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 60px;
-}
-
-.hero-descr {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-}
-
-.link {
-  display: inline-flex;
+.menu li a {
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: brown;
-  border: 1px solid currentColor;
-  border-radius: 6%;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 160px;
-  transition: 0.2s background-color ease-in-out;
-}
-
-.link svg {
-  fill: currentColor;
-  max-width: 15px;
-  max-height: 15px;
-  transform: translateY(1px);
-  transform: translateX(-3px);
-}
-
-.link:hover {
-  background-color: floralwhite;
-}
-
-.services-section {
-  margin-top: 50px inherit;
-}
-
-.services-header {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 3%;
-}
-
-.service-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.service-title {
-  display: inline-block;
-  height: 40px;
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.service-description {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.service-link {
-  margin-bottom: 0;
-  margin-top: auto;
-}
-
-.footer {
-  background-color: rgba();
+  color: black;
 }

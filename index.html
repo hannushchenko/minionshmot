@@ -4,278 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>My landing page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a class="logo">
-          <img src="img/logo.png" alt="logo" />
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="./img/logo.png" alt="logo" />
+          <span>ello there</span>
         </a>
-        <button class="button-reset burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </button>
+
+        <ul class="menu">
+          <li><a href="#">Main</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Discount</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
       </div>
-    
     </header>
 
-    <main>
-      <section class="hero-section">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class = "hero-title">Hello there</h1>
-            <p class = "hero-descr">Glad to see you, dear friend Lorem ipsum dolor. A sit amet consectetur adipisicing elit. 
-              Ipsa, quia. Itaque neque sed dolorem optio consectetur perspiciatis animi ipsam.</p>
-           
-           
-            <a href="#" class="link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 480.026 480.026" style="enable-background:new 0 0 480.026 480.026;" xml:space="preserve">
-           <g>
-             <g>
-               <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                 c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
-                 c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                 C481.394,244.653,481.394,235.373,475.922,229.325z"/>
-             </g>
-           </g>
-           <g>
-             <g>
-               <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                 c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
-                 c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                 C273.394,244.653,273.394,235.373,267.922,229.325z"/>
-             </g>
-           </g>
-           
-           </svg><span>Click to see more</span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="services-section">
-        <div class="container">
-          <h2 class="services-header">Services</h2>
-          <ul class="list-reset services-list">
-            <li class="service-item">
-              <h3 class="service-title">Very first service</h3>
-              <p class="service-decription">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quod.
-              </p>
-              <a href="#" class="service-link link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 480.026 480.026" style="enable-background:new 0 0 480.026 480.026;" xml:space="preserve">
-             <g>
-               <g>
-                 <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C481.394,244.653,481.394,235.373,475.922,229.325z"/>
-               </g>
-             </g>
-             <g>
-               <g>
-                 <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C273.394,244.653,273.394,235.373,267.922,229.325z"/>
-               </g>
-             </g>
-             
-             </svg><span>Click to see more</span></a>
-            </li>
-
-            <li class = "service-item">
-              <h3 class="service-title">Not first service</h3>
-              <p class="service-decription">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                repellat veritatis perferendis nobis.
-              </p>
-              <a href="#" class="service-link link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 480.026 480.026" style="enable-background:new 0 0 480.026 480.026;" xml:space="preserve">
-             <g>
-               <g>
-                 <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C481.394,244.653,481.394,235.373,475.922,229.325z"/>
-               </g>
-             </g>
-             <g>
-               <g>
-                 <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C273.394,244.653,273.394,235.373,267.922,229.325z"/>
-               </g>
-             </g>
-             
-             </svg><span>Click to see more</span></a>
-            </li>
-
-            <li class = "service-item">
-              <h3 class="service-title">3d service</h3>
-              <p class="service-decription">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae!
-              </p>
-              <a href="#" class="service-link link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 480.026 480.026" style="enable-background:new 0 0 480.026 480.026;" xml:space="preserve">
-             <g>
-               <g>
-                 <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C481.394,244.653,481.394,235.373,475.922,229.325z"/>
-               </g>
-             </g>
-             <g>
-               <g>
-                 <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C273.394,244.653,273.394,235.373,267.922,229.325z"/>
-               </g>
-             </g>
-             
-             </svg><span>Click to see more</span></a>
-            </li>
-
-            <li class = "service-item">
-              <h3 class="service-title">last service</h3>
-              <p class="service-decription">
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Maxime, quod. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Maxime, quod. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Maxime, quod.
-              </p>
-              <a href="#" class="service-link link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 480.026 480.026" style="enable-background:new 0 0 480.026 480.026;" xml:space="preserve">
-             <g>
-               <g>
-                 <path d="M475.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312l-134.368,149.28c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C481.394,244.653,481.394,235.373,475.922,229.325z"/>
-               </g>
-             </g>
-             <g>
-               <g>
-                 <path d="M267.922,229.325l-144-160c-3.072-3.392-7.36-5.312-11.904-5.312h-96c-6.304,0-12.032,3.712-14.624,9.472
-                   c-2.56,5.792-1.504,12.544,2.72,17.216l134.368,149.312L4.114,389.293c-4.224,4.704-5.312,11.456-2.72,17.216
-                   c2.592,5.792,8.32,9.504,14.624,9.504h96c4.544,0,8.832-1.952,11.904-5.28l144-160
-                   C273.394,244.653,273.394,235.373,267.922,229.325z"/>
-               </g>
-             </g>
-             
-             </svg><span>Click to see more</span></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="sticker-section">
-        <div class="container">
-          <h2>Join us now!</h2>
-          <a href="#" class="link ">Join</a>
-        </div>
-      </section>
+    <br /><br /><br />
+    <main class="main">
+      <div class="container">
+        <h1>Hello world</h1>
+      </div>
     </main>
-
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-top">
-          <div class="footer-contacts">
-            <span class="footer-contacts-descr"> Phone </span>
-            <a href="tel:+38066005767" class="footer-contacts-value">
-              +38066005767
-            </a>
-
-            <span class="footer-contacts-descr"> E-Mail </span>
-            <a href="mailto:Hannushchenko@gmail.com" class="footer-contacts-value">
-              Hannushchenko@gmail.com
-            </a>
-          </div>
-        </div>
-        <div class="footer-middle">
-          <div class="footer-column">
-            <h2 class="footer-column-name">Services</h2>
-            <ul class="list-reset footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Serv1</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Best sevice</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Hmm. Nice</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Hmm. Very Nice</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Hmm. Nice</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- ------------------- -->
-          <div class="footer-column">
-            <h2 class="footer-column-name">Shop</h2>
-            <ul class="list-reset footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Magazines</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">T-shorts</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Cups</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Stickers</a>
-              </li>
-            </ul>
-          </div>
-          <!-- ------------------- -->
-          <div class="footer-column">
-            <h2 class="footer-column-name">Sponsors</h2>
-            <ul class="list-reset footer-list">
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Apple</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Google</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Milka</a>
-              </li>
-              <li class="footer-item">
-                <a href="#" class="footer-item-link">Zbruchanska</a>
-              </li>
-            </ul>
-          </div>
-<!-- ------------------- -->
-          <div class="footer-column">
-            <h2 class="footer-column-name">Our social media</h2>
-            <p class = "footer-column-descr">Do not forget to subscribe</p>
-            <ul class="list-reset footer-icons-list">
-              <li class = "footer-icon-item"><a href = "#" class="footer-icon footer-icon-fb" target="_blank"></a></li>
-              <li class = "footer-icon-item"><a href = "#" class="footer-icon footer-icon-inst" target="_blank"></a></li>
-              <li class = "footer-icon-item"><a href = "#" class="footer-icon footer-icon-tt" target="blank"></a></li>
-              <li class = "footer-icon-item"><a href = "#" class="footer-icon footer-icon-lin" target="_blank"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <a class="logo">
-            <img src="img/logo.png" alt="logo" />
-          </a>
-          <small>Hannushchenko INC(C)</small>
-        </div>
+        <a class="logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+          <span>annushchenko INC(C)2022</span>
+        </a>
       </div>
     </footer>
   </body>
