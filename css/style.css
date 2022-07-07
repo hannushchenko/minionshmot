@@ -55,6 +55,8 @@ a {
     overflow: hidden;
 }
 
+/*********************************HEADER*********************************/
+
 .header {
     height: 150px;
 }
@@ -95,9 +97,35 @@ a {
     text-decoration: underline;
 }
 
+/*********************************MAIN*********************************/
+
 .main {
     flex: 1 1 auto;
 }
 
+.main__container {
+}
+.main__content {
+}
+.main__title {
+}
+.main__text {
+}
+.main__actions {
+}
+.main__getinfo {
+}
+.actions__button__image {
+}
+.actions__icon {
+}
+.actions__icon__image {
+}
+.main__decor {
+}
+.decor__image {
+}
+
+/*********************************FOOTER*********************************/
 .footer {
 }
